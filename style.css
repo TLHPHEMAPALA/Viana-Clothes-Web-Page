@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/finance');
+
+                
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    width: 100%;    
+}
+
+.header {    
+    font-size: 20px;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#333;
+    color:#fff;
+    font-weight: bold;  
+    text-decoration: none;
+   
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px; /* Slightly larger font size */
+}
+
+.navbar a {        
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight:200;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar a:last-child {
+    margin-right: 0; /* Remove the margin from the last link to avoid extra space */
+}
+
+.navbar a:hover,
+.navbar .active {    
+    color: #ff8c00;
+}
+
+.navbar a.active::after,
+.navbar a:hover::after{        
+    content: "";
+    width: 100%;
+    height: 2px;
+    background:rgb(6, 102, 70);
+    position: absolute;
+    bottom: -4px;
+    left: -4px;
+}
+
+.cart {
+    color: #fff;
+    position: relative;
+    font-size: 28px; /* Larger cart icon */
+}
+
+.cart::before {
+    content: attr(0);
+    position: absolute;
+    top: -12px; /* Adjust vertical positioning */
+    right: -12px; /* Adjust horizontal positioning */
+    background-color: #ff8c00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px 10px; /* Increase padding for better visibility */
+    font-size: 14px;
+}
+
+.hero{    
+    height: 600px;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.973), rgba(53, 53, 53, 0.856)), url(/img/clothes.jpg) ;  
+    background-size: cover;
+    background-position: center;
+}
+
+.topic{
+    
+    color: #7a7a7a;
+    font-size:50px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:80vh;
+    padding: 0 10%;        
+    background-size: 100%; 
+    text-align: center;    
+    line-height: 80px;
+}
+
+.subtopic{
+    margin-top: -150px;
+    color: #b1b1b1;
+    font-size:20px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+    padding: 0 10%;        
+    background-size: 100%; 
+    text-align: center;    
+    line-height: 10px;
+}
+
+.shopnow{
+    margin-top: 50px;    
+    width: 150px; 
+    height: 50px; 
+    background-color: #ff8c00;  
+    border: none; 
+    cursor: pointer;    
+    margin-left:45%;    
+    font-size: 15px;
+}
+
+.shopnow a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.shopnow:hover{
+    background: rgb(6, 102, 70);
+    box-shadow: none;
+}
+
+.features{
+    z-index: -1;
+    padding: 40px 40px 40px 40px;  
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    
+}
+
+.banner-container{
+    display: grid;    
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.banner {
+    position: relative;
+    border-radius: 2rem;
+    border: 2px solid var(--primary);
+    overflow: hidden;    
+    display: flex; 
+}
+
+.banner:hover {
+    width: 100%;
+    transition: .5s ease; 
+    transform: scale(0.75); 
+}
+
+.products{
+    margin-top: 40px;
+    
+}
+
+.products h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.card-container{
+    padding: 40px 40px 40px 40px; 
+    border-radius: 10px ;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img{
+    width:260px;
+    height:350px;
+    border-radius: 15px ;
+    padding: 10px 10px 10px 10px;   
+}
+
+.card p{
+    padding: 10px 10px 10px 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-para{
+    font-size:22px;
+    font-family: 'Finance', sans-serif;
+    color: #333;
+}
+
+.card-price{
+    font-size:18px ;
+}
+
+.card-button{
+    justify-content: space-between;
+}
+
+.card-button{
+    margin-left: 10px;
+}
+
+.addtocart{ 
+    width: 100px; 
+    height:30px; 
+    background-color: #ff8c00;  
+    border-radius: 5px;
+    cursor: pointer;       
+    font-size: 15px;
+    border:0.1px  #ff8c00;
+}
+
+.addtocart a{
+    text-decoration: none;
+    color: #fff
+}
+
+.addtocart:hover{
+    background: rgb(102, 60, 6);
+    box-shadow: none;
+}
+
+.wishlist{
+    width: 100px; 
+    height:30px;     
+    border-radius: 5px;
+    cursor: pointer;       
+    font-size: 15px;
+    border-color:#ff8c00;
+}
+
+.wishlist a{
+    text-decoration: none;
+    color:#7e4602;
+}
+
+.wishlist:hover{
+    background:#ff8c00;
+    box-shadow: none; 
+    
+}
+
+.mens-collection {
+    
+    margin-top: 40px;
+}
+
+.mens-collection  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.kids{
+   
+    margin-top: 40px;
+}
+
+.kids h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.visit{
+    padding: 10px 10px 10px 10px;
+    margin: 40px 40px 40px 40px;
+    justify-content: space-between;
+    display: flex;
+    border: 2px solid #000;    
+}
+
+.visitus{
+    align-items: center;
+    display: flex;
+}
+
+.visit-para{    
+    padding: 60px 120px 40px 40px;  
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.address{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.time,.number,.email{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.visit-button{
+    margin-top: 20px;    
+    width: 150px; 
+    height: 50px; 
+    background-color: #ff8c00;  
+    border: none; 
+    cursor: pointer;         
+    font-size: 20px;
+}
+
+.visit-button a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.visit-button:hover{
+    background: rgb(6, 102, 70);
+    box-shadow: none;
+}
+.visitimg{
+    border: #ff8c00;
+}
+
+.visitimg img{
+    width:600px;
+    height:400px;
+}
+
+.subscribe{
+    margin: 40px 40px 40px 40px;
+}
+
+.sub-para{
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #7b978a;  
+    padding:50px 50px 50px 50px;
+    background-color: #cce7db;
+}
+
+.sub-p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sub-form{
+    margin-top: 50px;
+    display: flex;
+}
+
+.holder{
+    width: 400px;
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+}
+
+.subscribe-button{
+    width: 105px;
+    height: 43.5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer{   
+    background-color:hsl(0, 0%, 13%);
+    padding: 10px;
+}
+
+.footer-parts{
+    margin: 40px 40px 40px 40px;
+    justify-content: space-between;
+    display: flex;    
+}
+
+.customer-services,.about-Us,.terms ,.store{
+    margin-top: 40px;
+}
+
+.footer-parts a{    
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight:200;
+    text-transform: uppercase;
+    color: #90ad9f;    
+    transition: color 0.3s;
+}
+
+
+.customer-services ,.about-Us, .terms ,.store{
+    display: flex;
+    flex-direction: column;   
+    color: #90ad9f;  
+}
+
+/*Footer Bottom*/
+.footer-bottom {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  
+  .payment-img {
+    max-width: 335px;
+    width: 100%;    
+    margin-top: 40px;
+    margin-bottom:40px;
+  }
+  
+  .copyright {
+    
+    color:hsl(0, 0%, 47%);
+    font-size:15px;
+    font-weight:500;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    margin-bottom: 50px;
+  }
+  
+  .copyright a {
+    display: inline;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  
